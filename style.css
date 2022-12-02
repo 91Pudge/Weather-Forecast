@@ -1,0 +1,38 @@
+html, body{
+    height:100%;
+}
+
+#container{
+    text-align: center; 
+   }   
+
+   h1 {
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+    border: 5px  solid rgb(85,168,241);
+   }
+
+   /* .inputter{
+    text-align: center;
+   } */
+
+
+   #entButton{
+    background-color: rgb(85,168,241);
+    border-radius: 7px;
+   }
+   #geoEnter{
+    background-color: rgb(85, 168, 241);
+    border-radius: 7px;
+   }
+
+   input:invalid{
+    border: 2px solid black;
+    outline: none;
+   }
+
+   input:valid{
+    border: 2px solid rgb(85,168,241);
+    outline: none;
+   }
