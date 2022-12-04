@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Weather App</title>
+    <title>The Weather Forecaster</title>
   </head>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Nerko+One&display=swap"
+    rel="stylesheet"
+  />
   <body>
-    <h1>Weather App</h1>
+    <h1>The Weather Forecaster</h1>
+    <div class="user-input">
+      <input
+        id="inputter"
+        type="text"
+        required
+        placeholder="Enter a town or city"
+      />
+      <button id="entButton">Submit</button>
+      <p>Get weather for your location</p>
+      <button id="geoEnter">Click here</button>
+    </div>
     <div class="container">
       <div class="place-details">
-        <div>Place: <span id="places"></span></div>
-        <div>Temperature: <span id="temperature"></span>&degC</div>
-          <div>
-            Feels like:<span id="feels"></span>&degC 
-          </div>
-          <div>
-            Minimum Temp: <span id="min"></span>&degC
-          </div>
-          <div>
-            <span id="min"></span> Maximum Temp: <span id="max"></span>&degC
-          </div>
-          <div>
-            Humidty: <span id="hum"></span>&percnt;
-          </div>
-
-      <div class="user-input">
-        <input
-          id="inputter"
-          type="text"
-          required
-          placeholder="Enter a town or city"
-        />
-        <button id="entButton">Submit</button>
-        <button id="geoEnter">Click here</button>
+        <div class="weather-types">
+          <p id="date"></p>
+          <p><span id="description"></span></p>
+          <span id="temperature"></span>
+          <div><span id="places"></span></div>
+          <!--  -->
+        </div>
       </div>
     </div>
+    <div id="weather-cate">
+      <p>Humidty</p>
+      <div class="type"><span id="hum"></span></div>
+      <p>Wind speed</p>
+      <div class="type" id="wind"></div>
+      <p>Feels Like</p>
+      <div class="type" id="feels"></div>
+    </div>
+
     <script src="app.js"></script>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Nerko+One&display=swap" rel="stylesheet">
   </body>
 </html>
