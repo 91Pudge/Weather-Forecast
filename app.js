@@ -33,7 +33,12 @@ clicker1.addEventListener("click", () => {
           }
         })
         .then((data) => {
-          console.log(data);
+          //Weather image
+          let iconCode = data.weather[0].icon;
+          document.getElementById(
+            "iconurl"
+          ).src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+          //weather description
           const description = data.weather[0].description;
           document.getElementById("description").textContent =
             description.toUpperCase();
@@ -76,6 +81,10 @@ clicker.addEventListener("click", () => {
     })
     .then((data) => {
       console.log(data);
+      let iconCode = data.weather[0].icon;
+      document.getElementById(
+        "iconurl"
+      ).src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
       //weather type
       const description = data.weather[0].description;
       document.getElementById("description").textContent =
