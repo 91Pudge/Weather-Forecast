@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Weather Forecaster</title>
+  </head>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Nerko+One&display=swap"
+    rel="stylesheet"
+  />
+  <body>
+    <h1>The Weather Forecaster</h1>
+    <div class="user-input">
+      <input
+        id="inputter"
+        type="text"
+        required
+        placeholder="Enter a town or city"
+      />
+      <button id="entButton">Submit</button>
+      <button id="geoEnter">Local Weather</button>
+    </div>
+
+    <div class="container">
+      <div class="place-details">
+        <div class="weather-types">
+          <p id="date"></p>
+          <p id="description"></p>
+          <p id="place"></p>
+          <span id="temperature"></span>
+          <img src="" id="iconurl" width="150px" />
+        </div>
+      </div>
+    </div>
+    <script></script>
+    <div id="weather-cate">
+      <p>Humidty</p>
+      <div class="type"><span id="hum"></span></div>
+      <p>Wind speed</p>
+      <div class="type" id="wind"></div>
+      <p>Feels Like</p>
+      <div class="type" id="feels"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
