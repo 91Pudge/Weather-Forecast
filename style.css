@@ -1,69 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Nerko+One&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Nerko+One&family=Open+Sans:wght@600&display=swap");
 * {
   font-family: "Inter", sans-serif;
   font-family: "Nerko One", cursive;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
-  color: white;
+  color: black;
+  margin: 0 auto;
+}
+body {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(152, 158, 243)
+  );
+}
+h1 {
+  margin: 10px;
+  padding: 10px;
+  color: black;
 }
 
 .container {
-  background-image: linear-gradient(
-    to right,
-    yellow,
-    red,
-    blue,
-    indigo,
-    violet,
-    orange,
-    green
-  );
-  margin-right: auto;
-  margin-left: auto;
-  width: 40%;
-  border: 1px solid black;
-  border-radius: 15px;
-  margin-top: 50px;
+  display: flex;
+}
+.weather-types {
+  width: 350px;
+  height: 400px;
+  border-radius: 20%;
+  background-color: rgb(152, 158, 243);
   padding: 10px;
-  box-shadow: 10px 5px 5px grey;
+
+  text-align: center;
 }
 
 .place-details {
   display: flex;
-  flex-direction: column;
-  padding: 10px;
-  align-items: center;
-  gap: 30px;
+}
+#geoEnter {
 }
 
 .user-input {
   display: flex;
   flex-direction: column;
-}
-
-h1 {
+  width: 30%;
   margin: 0 auto;
-  text-align: center;
-  width: 200px;
-  border: 5px solid rgb(85, 168, 241);
-  padding: 10px;
-  color: black;
 }
 
 button {
-  background-image: linear-gradient(
-    to right,
-    violet,
-    indigo,
-    blue,
-    green,
-    orange,
-    red,
-    yellow
-  );
+  background-color: #01384d;
   color: white;
   border-radius: 7px;
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* margin: 10px; */
 }
 
 input:invalid {
@@ -77,6 +68,58 @@ input:valid {
 }
 
 input {
-  text-align: center;
   border-radius: 5px;
+  color: grey;
+  width: 50%;
+}
+
+#temperature {
+  margin-top: 50px;
+  font-size: 200px;
+  background-color: transparent;
+  color: white;
+}
+
+#date {
+  color: black;
+  width: 130px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: -10px;
+}
+
+#weather-cate {
+  display: flex;
+  border-radius: 20px;
+  text-align: center;
+  width: 380px;
+  height: 60px;
+  background-color: white;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 0, 0, 0),
+    rgb(152, 158, 243)
+  );
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+#weather-cate p {
+  /* color: blanchedalmond; */
+  margin-left: 10px;
+  font-size: 15px;
+  right: 55px;
+}
+
+#description {
+  font-size: 30px;
+}
+
+.type {
+  position: relative;
+  top: 20px;
+  right: 55px;
+}
+#iconurl {
+  margin-top: -50px;
+  margin-bottom: 100px;
 }
