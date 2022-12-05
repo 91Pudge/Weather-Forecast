@@ -33,6 +33,9 @@ clicker1.addEventListener("click", () => {
           }
         })
         .then((data) => {
+          (document.getElementById("place").textContent =
+            data.name + ", " + data.sys.country),
+            data.sys.country;
           //Weather image
           let iconCode = data.weather[0].icon;
           document.getElementById(
@@ -80,12 +83,17 @@ clicker.addEventListener("click", () => {
       }
     })
     .then((data) => {
-      console.log(data);
+      console.log(data.name, data.sys.country);
+
+      (document.getElementById("place").textContent =
+        data.name + ", " + data.sys.country),
+        data.sys.country;
       let iconCode = data.weather[0].icon;
       document.getElementById(
         "iconurl"
       ).src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
       //weather type
+
       const description = data.weather[0].description;
       document.getElementById("description").textContent =
         description.toUpperCase();
